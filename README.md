@@ -1,6 +1,6 @@
 # Elo Ratings for Premier League Teams
 
-This project calculates and visualizes Elo ratings for all Premier League teams from the 1992–93 season onward.
+Overview: This project calculates and visualizes Elo ratings for all Premier League teams from the 1993–94 season onward.
 
 ## Folder Structure
 
