@@ -1,12 +1,12 @@
 # Premier League Elo Ratings Dashboard
 
-This project calculates and visualizes **Elo ratings for all Premier League teams** from the 1992–93 season onward. The interactive dashboard allows users to explore team performance trends, match-by-match Elo ratings, and the biggest single-season gains and losses in Premier League history.
+This project calculates and visualizes **Elo ratings for all Premier League teams** from the 1992–93 season to the 2024-2025 season. The interactive dashboard allows users to explore team performance trends, match-by-match Elo ratings, and the biggest single-season gains and losses in Premier League history.
 
 ---
 
 ## Features
 
-- Compute Elo ratings for all Premier League matches from 1992–93 to 2025.
+- Compute Elo ratings for all Premier League matches from 1992–93 to the 2024-2025 season.
 - Interactive **Streamlit dashboard** with multiple views:
   - **Team-wise Elo trends** across multiple seasons.
   - **Match-by-match Elo ratings** for a selected season.
@@ -51,7 +51,7 @@ This project calculates and visualizes **Elo ratings for all Premier League team
     streamlit run app.py
 ```
 
-Your browser will open at the URL provided by Streamlit (usually http://localhost:xxxx).
+Your browser will open at the URL provided by Streamlit.
 
 ## Access the Dashboard Online
 The live dashboard is hosted on Streamlit Cloud:
