@@ -6,11 +6,11 @@ import plotly.express as px
 import numpy as np
 
 #Reading the necessary CSV files
-elo_history_df = pd.read_csv('Data/Processed/Elo-Ratings History.csv')
-final_elo_ratings = pd.read_csv('Data/Processed/Updated Elo-Ratings.csv')
-elo_gain_df = pd.read_csv('Data/Processed/Elo_gain_per_team.csv')
-elo_loss_df = pd.read_csv('Data/Processed/Elo_loss_per_team.csv')
-PL_dataframe_processed = pd.read_csv('Data/Processed/Updated PL_Dataframe.csv')
+elo_history_df = pd.read_csv('../Data/Processed/Elo-Ratings History.csv')
+final_elo_ratings = pd.read_csv('../Data/Processed/Updated Elo-Ratings.csv')
+elo_gain_df = pd.read_csv('../Data/Processed/Elo_gain_per_team.csv')
+elo_loss_df = pd.read_csv('../Data/Processed/Elo_loss_per_team.csv')
+PL_dataframe_processed = pd.read_csv('../Data/Processed/Updated PL_Dataframe.csv')
 
 
 elo_history_df['Date'] = pd.to_datetime(elo_history_df['Date'])
