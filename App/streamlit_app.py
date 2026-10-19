@@ -113,7 +113,7 @@ st.sidebar.info('Use the dropdown option to explore multiple visualizations')
 #Adding logic to the entire page
 if page == 'Home': 
     # --- Project Title ---
-    st.markdown("# ⚽ Premier League Elo-Ratings Dashboard")
+    st.markdown("# Premier League Elo-Ratings Dashboard")
     
     # --- Project Description ---
     st.markdown("""
@@ -145,7 +145,7 @@ This allows you to:
         - Top/Bottom performers based on Elo ratings 
     - Select teams and seasons from the dropdowns to explore detailed charts and trends.
     
-    💡 **Tip:** Use the interactive charts to hover, zoom, and select specific teams or seasons for detailed insights.
+     **Tip:** Use the interactive charts to hover, zoom, and select specific teams or seasons for detailed insights.
                 
     """)
     st.markdown("<br>", unsafe_allow_html=True)
@@ -173,7 +173,7 @@ This allows you to:
 
     # --- Technical Stack / Learnings ---
     st.markdown("""
-    ### 🛠 Technical Stack & Learnings
+    ### Technical Stack & Learnings
     - Used Python and pandas to clean, aggregate, and process multi-season Premier League data efficiently.  
     - Built interactive visualizations with Plotly, including line, bar, and bubble charts, customizing colors, hover info, and labels.  
     - Developed a Streamlit dashboard with tabs, sliders, and multi-select filters for dynamic exploration of team performances.  
@@ -184,7 +184,7 @@ This allows you to:
     
     # --- Fun Fact / Engagement ---
     st.markdown("""
-### ⚡ Fun Fact
+### Fun Fact
 Did you know? Although Manchester United is considered one of the all-time top Premier League teams, their Elo ratings place them **15th out of the 51 teams** that have played in the league over the last 32 seasons.
 
 Explore the dashboard to discover similar insights for other teams and seasons.
@@ -224,8 +224,8 @@ Elo ratings provide a **dynamic, match-by-match measure of team strength**, goin
 
 
     st.markdown(f"""
-        - 🏆 **{max_team_rating_df_sorted.iloc[0]['Team']}** had the highest Elo-rating ever: **{max_team_rating_df_sorted.iloc[0]['Elo-rating after match']}** ({max_team_rating_df_sorted.iloc[0]['Season']} Season)  
-        - ↘️ **{min_team_rating_df_sorted.iloc[0]['Team']}** had the lowest Elo-rating ever: **{min_team_rating_df_sorted.iloc[0]['Elo-rating after match']}** ({min_team_rating_df_sorted.iloc[0]['Season']} Season)  
+        - **{max_team_rating_df_sorted.iloc[0]['Team']}** had the highest Elo-rating ever: **{max_team_rating_df_sorted.iloc[0]['Elo-rating after match']}** ({max_team_rating_df_sorted.iloc[0]['Season']} Season)  
+        - **{min_team_rating_df_sorted.iloc[0]['Team']}** had the lowest Elo-rating ever: **{min_team_rating_df_sorted.iloc[0]['Elo-rating after match']}** ({min_team_rating_df_sorted.iloc[0]['Season']} Season)  
  
                 """)
 
@@ -254,7 +254,7 @@ Elo ratings provide a **dynamic, match-by-match measure of team strength**, goin
             - Observe **trends over time**, for example, how newly promoted teams fared against established clubs.
             - Combine this with the “Team-wise Elo over time” tab to see if peak performances align with **multi-season trends**.
 
-            💡 **Tip:** Use this summary view to quickly identify teams with **the most impressive Elo gains or losses** before diving into match-by-match trends.                
+            **Tip:** Use this summary view to quickly identify teams with **the most impressive Elo gains or losses** before diving into match-by-match trends.                
             ''')
     st.markdown("""
                 Use the controls below to select specific teams and a season. The bar chart will show the peak Elo ratings for your selected teams during that season, enabling quick visual comparison.
@@ -280,7 +280,7 @@ if page == 'Team-wise Elo over time':
     st.markdown("<br>", unsafe_allow_html=True)
 
     # Making two tabs for this page
-    tab1, tab2 = st.tabs(["📈 Multi-season Trends", "📊 Single-season Trends"])
+    tab1, tab2 = st.tabs(["📈 Multi-season Trends", "Single-season Trends"])
 
     with tab1:   
         st.markdown("""
@@ -340,7 +340,7 @@ if page == 'Team-wise Elo over time':
                 - Which teams dominated or struggled during the season.
                 - Detailed insights into match-level performance trends.
 
-                💡 **Tip:** Use this view to compare team performance **within a season** and identify key moments that impacted their Elo rating.
+                **Tip:** Use this view to compare team performance **within a season** and identify key moments that impacted their Elo rating.
                 """)
 
         season = st.selectbox(
@@ -428,7 +428,7 @@ Positive changes are shown in green, negative changes in red. Bubble size reflec
                 - Compare **historically strong teams** versus **new or underperforming teams**.  
                 - Identify seasons where a team had **unexpected success or failure**.
                 - Track **performance volatility** across multiple seasons.  
-                💡 **Tip:** Hover over bubbles in the chart to see the exact Elo difference and start/end ratings for each team. This helps you quickly spot **major shifts in team strength** over time.
+                **Tip:** Hover over bubbles in the chart to see the exact Elo difference and start/end ratings for each team. This helps you quickly spot **major shifts in team strength** over time.
                 """)
 
     st.markdown("---")
